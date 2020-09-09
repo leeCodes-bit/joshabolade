@@ -1,0 +1,101 @@
+.main-content h1 {
+	text-align: center;
+	font-size: 140px;
+	line-height: 108.4%;
+	color: rgba(255, 255, 255, 0.1);
+	font-family: 'Kaushan Script', cursive;
+	margin-top: -120px;
+}
+
+.about {
+	margin-top: 50px;
+}
+
+.about p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #dddddd;
+}
+
+.education {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.education h3 {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.1em;
+	color: #ffea00;
+}
+
+.education p {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #dddddd;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.education .left-side {
+	width: 50%;
+}
+
+.education .right-side {
+	width: 50%;
+	margin-left: 100px;
+}
+
+@media screen and (max-width: 800px) {
+	.main-content h1 {
+		margin-top: -180px;
+	}
+	.about,
+	.education {
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.main-content h1 {
+		font-size: 100px;
+		margin-top: -160px;
+	}
+	.about,
+	.education {
+		margin-left: 50px;
+	}
+	.education {
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-top: 15px;
+	}
+	.education .left-side {
+		width: 100%;
+	}
+	.education .right-side {
+		margin-left: 1px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 412px) {
+	.main-content h1 {
+		font-size: 90px;
+		margin-top: -160px;
+	}
+	.about,
+	.education {
+		margin-left: 50px;
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 385px) {
+	.main-content h1 {
+		font-size: 80px;
+		margin-top: -150px;
+	}
+}

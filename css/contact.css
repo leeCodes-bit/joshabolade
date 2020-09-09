@@ -1,0 +1,41 @@
+.contact-hr {
+	margin-top: 190px;
+	margin-bottom: -5px;
+}
+
+/* .education .left-contact {
+	width: 60%;
+} */
+
+@media screen and (max-width: 768px) {
+	.main-content .contact-heading {
+		font-size: 100px;
+		margin-top: -160px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.main-content .contact-heading {
+		font-size: 100px;
+		margin-top: -160px;
+		margin-left: 30px;
+		width: 100%;
+	}
+	.contact-education {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.main-content .contact-heading {
+		font-size: 75px;
+		margin-top: -140px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.main-content .contact-heading {
+		font-size: 65px;
+		margin-top: -140px;
+	}
+}

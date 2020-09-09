@@ -1,0 +1,91 @@
+.gate .left-expense {
+    margin-top: 10px;
+}
+
+.motive {
+    margin-left: -80px;
+}
+
+.left-mottopography .one {
+    background: #4a55a4;
+}
+
+.left-mottopography .two {
+    background: #373737;
+    color: white;
+}
+
+.left-mottopography .three {
+    background: #ffffff;
+    color: white;
+    color: #000;
+}
+
+.left-mottopography .four {
+    background: #c4c4c4;
+}
+
+.left-mottopography .five {
+    background: #464646;
+}
+
+.right-mottopography {
+    margin-top: 40px;
+}
+
+.seventh-card .left-expense {
+    width: 80%;
+}
+
+.seventh-card .right-expense ul li {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 160.5%;
+}
+
+.seventh-card .right-expense {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.nine-card {
+    margin-top: 30px;
+}
+
+.nine-card p a {
+    color: #ffea00;
+}
+
+@media screen and (max-width: 800px) {
+    .motive {
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .gate .right-expense {
+        width: 100%;
+    }
+    .motive {
+        margin-left: 50px;
+    }
+    .first-motive img, .six-card img, .eight-card img {
+        width: 100%;
+        margin-left: 30px;
+    }
+    .seventh-card .right {
+        width: 100%;
+    }
+    .seventh-card img {
+        width: 100%;
+    }
+    .nine-card {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .seventh-card img {
+        width: 100%;
+    }
+}

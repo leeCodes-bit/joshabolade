@@ -1,0 +1,154 @@
+.main {
+   font-family: 'ubuntu', sans-serif;
+   margin-top: 70px;
+}
+
+.project-card {
+   margin-top: 50px;
+}
+
+.left-expense, .right-expense {
+   width: 50%;
+}
+
+h3 {
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 28px;
+   color: #dddddd;
+}
+
+p {
+   font-size: 15px;
+   line-height: 160.5%;
+   color: #dddddd;
+}
+
+.second-card .left-expense {
+   margin-top: 120px;
+}
+
+.forth-card .left-expense, .fifth-card .left-expense, .seventh-card .left-expense, .nineth-card .left-expense {
+   margin-top: 10px;
+}
+
+.seventh-card .left-expense {
+   margin-top: 50px;
+}
+
+.sixth-card {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.left-topography p, .left-microtopography p, .left-gatetopography p, .left-mottopography p {
+   border-radius: 50%;
+   width: 66.3px;
+   height: 66.37px;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 20px;
+   padding-top: 25px;
+}
+
+.left-topography .one {
+   background: #33a97e;
+}
+
+.left-topography .two {
+   background: #1f2430;
+}
+
+.left-topography .three {
+   background: #6765ec;
+}
+
+.left-topography .four {
+   background: #005d3b;
+}
+
+.left-topography .five {
+   background: #474747;
+}
+
+.right-topography {
+   margin-top: 100px;
+}
+
+h4 {
+   color: #dddddd;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 127.4%;
+   font-family: "Lato", sans-serif;
+}
+
+.right-topography p {
+   font-size: 16px;
+   line-height: 127.4%;
+   color: #dddddd;
+   font-family: "Open Sans", sans-serif;
+   margin-top: 20px;
+}
+
+.nineth-card a {
+   color: #ffea00;
+}
+
+.tenth-card {
+   justify-content: space-between;
+}
+
+.tenth-card p {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   text-align: center;
+   border: 2px solid #dddddd;
+   padding-top: 40px;
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: bold;
+}
+
+h6 {
+   color: #dddddd;
+   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+   .eighth-card img, .first-card img, .third-card img {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 430px) {
+   .eighth-card img, .first-card img, .third-card img {
+      margin-left: 30px;
+   }
+   .second-card .left-expense {
+      margin-top: 5px;
+   }
+   .left-expense, .right-expense {
+      width: 100%;
+      margin-left: 30px;
+   }
+   .right-expense {
+      margin-top: 40px;
+   }
+   .sixth-card {
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+   }
+   .sixth-card .right-topography {
+      margin-top: 30px;
+   }
+   .tenth-card {
+      margin-left: 30px;
+   }
+   .tenth-card h6 {
+      text-align: left;
+      margin-left: 25px;
+   }
+}

@@ -1,0 +1,244 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(281.05deg, #161616 100.04%, rgba(22, 22, 22, 0) 6.33%), linear-gradient(199.86deg, rgba(22, 22, 22, 0) 6.76%, rgba(22, 22, 22, 0.867683) 7.44%, #161616 3.81%);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.wrapper #sidebar {
+    position: relative;
+}
+
+.wrapper #sidebar .sidebar-inner {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+#sidebar .sidebar-header h2 {
+    padding: 20px;
+    font-family: 'Kaushan Script', cursive;
+    color: #FFEA00;
+    font-size: 72px;
+    line-height: 108.4%;
+}
+
+#sidebar .sidebar-header p {
+    color: rgba(255, 255, 255, 0.26);
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: 0.12em;
+    font-family: 'Fredoka One', cursive;
+}
+
+#sidebar ul.components {
+    padding: 20px 0px;
+    padding: 40px 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#sidebar .nav-tabs a.active {
+    color: #fff;
+}
+
+#sidebar .nav-tabs a.active li {
+    list-style: disc !important;
+    font-weight: bold;
+    outline: 2px solid red;
+    color: white;
+}
+
+#sidebar ul.components ul.dropdown.act {
+    color: #fff;
+    font-weight: bold;
+}
+
+#sidebar ul p {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: white;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+    color: #AAAAAA;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    letter-spacing: 0.18em;
+    font-family: 'Fredoka One', cursive;
+}
+
+#sidebar ul li a:hover {
+    color: #fff;
+    letter-spacing: .25em;
+}
+
+.nav-tabs li .active {
+    list-style: disc !important;
+}
+
+#sidebar ul li.active>a, a[aria-expanded="true"] {
+    color: #fff;
+    font-weight: bold;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#pageSubmenu {
+    border-left: 2px solid #FFEA00;
+}
+
+.dropdown-toggl::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+#sidebar ul ul a.act {
+    color: white !important;
+    font-weight: bold;
+    ;
+}
+ul ul a {
+    padding-left: 50px !important;
+}
+
+ul ul a.act {
+    color: #fff;
+}
+
+/* home style */
+
+.wrapper .main-content {
+    margin-left: 300px;
+    width: calc(100% -250px);
+    transition: all 0.3s ease;
+}
+
+.wrapper .main-content .home {
+    min-height: 85vh;
+    background: linear-gradient(320.05deg, #161616 38.04%, rgba(22, 22, 22, 0) 56.33%), linear-gradient(199.86deg, rgba(22, 22, 22, 0) 52.76%, rgba(22, 22, 22, 0.867683) 79.44%, #161616 83.81%), url(../img/josh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home p span {
+    color: #FFEA00;
+}
+
+.home p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 200px 0 0 0;
+}
+
+hr {
+    border: 1px dotted #838383;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: #FFEA00;
+}
+
+.footer-menu a span {
+    color: #fff;
+}
+
+.wrapper .main-content .top-nav .hamburger .fa {
+    color: #FFEA00;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper #sidebar .sidebar-inner {
+        left: -250px;
+    }
+    .wrapper .main-content, .wrapper .main-content .top-nav {
+        width: 100%;
+        margin-left: -30px;
+    }
+    .wrapper .main-content .top-nav {
+        left: 0;
+    }
+    .home p {
+        padding: 155px 0 0 20px;
+        margin-right: -50px;
+    }
+    .wrapper .main-content .top-nav .hamburger .fa {
+        display: block;
+        margin-left: 55px;
+        margin-top: 40px;
+    }
+    .wrapper.active #sidebar .sidebar-inner {
+        left: 0;
+        background: linear-gradient(281.05deg, #161616 100.04%, rgba(22, 22, 22, 0) 6.33%), linear-gradient(199.86deg, rgba(22, 22, 22, 0) 6.76%, rgba(22, 22, 22, 0.867683) 7.44%, #161616 3.81%);
+        text-align: left;
+    }
+    .wrapper.active #sidebar p {
+        padding-left: 20px;
+    }
+    .wrapper.active #sidebar .components {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #sidebar .sidebar-header h2 {
+        padding: 20px;
+        font-family: 'Kaushan Script', cursive;
+        color: #FFEA00;
+        font-size: 50px;
+        line-height: 108.4%;
+    }
+    #sidebar .sidebar-header p {
+        color: rgba(255, 255, 255, 0.26);
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 0.12em;
+        font-family: 'Fredoka One', cursive;
+    }
+    #sidebar ul li a {
+        font-size: .7em;
+    }
+    .wrapper .main-content .top-nav .hamburger .fa {
+        margin-left: 65px;
+    }
+    .home p {
+        font-size: 16px;
+    }
+}
